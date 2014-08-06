@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.1.1
+
+cache: bundler
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: ESdC510y7c3Op7YtsKoUw2IInrI79mevczH2LSEIusQvG8l7i/xCQ7GWdTjfzLSOjEtBUtyNiyN3KAbK0jCwj6QBsyTuo5q7FQISB6nsagsa4Y7rI29e42454K/ILVRBNyLVZ1lSbhrxkIEjTy/VR0Qkc5gjVbmD8Ri13T15yno=
+  app:
+    master: yellanvil-qa
+    develop: yellanvil-qa
+  run: rake db:migrate
