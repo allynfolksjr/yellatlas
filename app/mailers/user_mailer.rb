@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
         @user = user
         @twitter_message = "#Local is evolving."
 
-        mail(:to => user.email, :subject => "Thanks for signing up!", :encoding => 'utf-8')
+        mail(:to => user.email, :subject => "Thanks for signing up!")
     end
 end
