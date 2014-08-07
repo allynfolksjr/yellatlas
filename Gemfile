@@ -26,6 +26,7 @@ end
 
 group :development do
   gem 'pry'
+  gem "letter_opener"
 end
 
 gem 'delayed_job_active_record'
