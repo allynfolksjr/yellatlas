@@ -67,12 +67,7 @@
 
         <%
             words = ''
-            if referrals_count == 1
-                words = 'friend has'
-            elsif
-                words = 'friends have'
-            end
-
+            referrals_count == 1 ? words = 'friend has' : words = 'friends have'
         %>
 
         <% if referrals_count == 0 %>
