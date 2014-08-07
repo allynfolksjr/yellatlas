@@ -16,3 +16,4 @@ deploy:
     master: yellatlas-qa
     develop: yellatlas-qa
   run: rake db:migrate
+  strategy: git
